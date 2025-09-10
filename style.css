@@ -1,46 +1,97 @@
-.container {
-  width: 575px;
-  height: 825px;
-
-  background-color: #797978;
-  padding-left: 30px;
-}
-#height,
-#weight {
-  width: 150px;
-  height: 25px;
-  margin-top: 30px;
-}
-
-#weight-guide {
-  margin-left: 75px;
-  margin-top: 25px;
-}
-
-#results {
-  font-size: 35px;
-  margin-left: 90px;
-  margin-top: 20px;
-  color: rgb(241, 241, 241);
-}
-
-button {
-  width: 150px;
-  height: 35px;
-  margin-left: 90px;
-  margin-top: 25px;
-  background-color: #fff;
-  padding: 1px 30px;
-  border-radius: 8px;
-  color: #212121;
-  text-decoration: none;
-  border: 2px solid #212121;
-
-  font-size: 25px;
-}
-
-h1 {
-  padding-left: 15px;
-  padding-top: 25px;
-  
-}
+ body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      color: #212121;
+    }
+    .container {
+      width: 90%;
+      max-width: 600px;
+      padding: 40px;
+      background-color: #797978;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    #navbar {
+      background-color: aqua;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    #navbar a {
+      text-decoration: none;
+      color: #212121;
+      font-weight: bold;
+    }
+    .bmi-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+    .bmi-form label {
+      font-weight: bold;
+      color: #f1f1f1;
+    }
+    .bmi-form input[type="number"] {
+      width: 100%;
+      max-width: 200px;
+      height: 35px;
+      padding: 0 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 2px solid #212121;
+      background-color: #fff;
+    }
+    #weight-guide {
+      margin-top: 25px;
+      text-align: left;
+      color: #f1f1f1;
+    }
+    #weight-guide h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    #results {
+      font-size: 28px;
+      margin-top: 20px;
+      text-align: center;
+      color: #f1f1f1;
+    }
+    .result-message {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    button {
+      width: 100%;
+      max-width: 200px;
+      height: 45px;
+      background-color: #fff;
+      padding: 1px 30px;
+      border-radius: 8px;
+      color: #212121;
+      text-decoration: none;
+      border: 2px solid #212121;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    button:hover {
+      background-color: #212121;
+      color: #fff;
+    }
+    h1 {
+      text-align: center;
+      padding-bottom: 15px;
+      color: #fff;
+    }
+    .error-message {
+      color: #ffcccc;
+    }
